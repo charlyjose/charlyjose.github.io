@@ -108,47 +108,30 @@
         }
     </style>
 
+
+
+<script src="js/xdomain.js"
+          slave="http://echo.jpillora.com/proxy.html"></script>
+
+
     <script>
         var Name, Email, Message
         function mailHelper(Name, Email, Message) {
-            // // Post data
-            // $.post("https://us-central1-resume-mailer.cloudfunctions.net/helloWorld/",
-            //     {
-            //         name: Name,
-            //         email: Email,
-            //         message: Message
-            //     },
-            //     function (data, status) {
-            //         alert("Data: " + data + "\nStatus: " + status);
-            //     });
-
-
-            $.ajax({
-    url: 'https://us-central1-resume-mailer.cloudfunctions.net/helloWorld/',
-    headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    type: "POST", /* or type:"GET" or type:"PUT" */
-    dataType: "json",
-    data: {
+            // Post data
+            $.post("https://us-central1-resume-mailer.cloudfunctions.net/helloWorld/",
+                {
                     name: Name,
                     email: Email,
                     message: Message
                 },
-    success: function (result) {
-        console.log(result);
-    },
-    error: function () {
-        console.log("error");
-    }
-});
-
-            
-
-
-
+                function (data, status) {
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
 
         }
+
+
+
 
 
         function mailTo() {
@@ -202,7 +185,6 @@
     <br><br>
 
 
-
     <div style="background-color: #fdf9f6;">
         <div class="uk-container uk-container-small" style="background-color: #fdf9f6;">
 
@@ -212,8 +194,8 @@
                 <h2 class="uk-heading-divider uk-text-center">
                     <span>
                         <b>CHARLY JOSE</b>
-                        <h6 style="margin-top: 0px;" style="font-size: small;"><span><a id="js-modal-prompt" href="#"
-                                    style="color: black;" onclick="mailTo()">Mail Me</a> | Kerala, IN</span></h6>
+<!--                         <h6 style="margin-top: 0px;" style="font-size: small;"><span><a id="js-modal-prompt host" href="#"
+                                    style="color: black;" onclick="mailTo()">Mail Me</a> | Kerala, IN</span></h6> -->
                         <h6 style="margin-top: 0px;" style="font-size: small;"><span><a id="js-modal-prompt"
                                     href="mailto:hicharlyjose@gmail.com?Subject=Hello!!"
                                     style="color: black;">hicharlyjose@gmail.com</a> | Kerala, IN</span></h6>
