@@ -19,20 +19,27 @@
         }
 
         header {
-        /* border-bottom: 1px solid #eee; */
-        /* height: 140px; */
-        position: relative;
-        padding-top: 5px;
-        background-image: linear-gradient(90deg, #2C2A86 20.5%, #078D2D 20.5%, #078D2D 37.5%, #FCB20D 37.5%, #FCB20D 55.5%, #EC5100 55.5%, #EC5100 72.5%, #6A3C06 72.5%, #6A3C06 79.5%, #C01C1B 79.5%);
-        background-size: 300px 5px;
-        background-repeat: repeat-x;
+            /* border-bottom: 1px solid #eee; */
+            /* height: 140px; */
+            position: relative;
+            padding-top: 5px;
+            background-image: linear-gradient(90deg, #2C2A86 20.5%, #078D2D 20.5%, #078D2D 37.5%, #FCB20D 37.5%, #FCB20D 55.5%, #EC5100 55.5%, #EC5100 72.5%, #6A3C06 72.5%, #6A3C06 79.5%, #C01C1B 79.5%);
+            background-size: 300px 5px;
+            background-repeat: repeat-x;
+        }
+        
+        .item .item:hover {
+            opacity: 1;
         }
 
-        /* body {
-            /* background-color: #525659; */
-        /* background-color: #fdf9f6; */
-        /* font-family: 'Lora', serif;
-        } */
+        .item:not(:hover) {
+            opacity: 0.8;
+        }
+
+        div {
+            opacity: 1;
+        }
+
         table {
             margin-bottom: 0px;
             margin-top: 0px;
@@ -132,28 +139,30 @@
 
 <body>
 
-<header>
-</header>
+    <header>
+    </header>
 
     <!-- NAVBAR -->
-    <nav class="uk-navbar-container" uk-navbar  style="background-color: #fdf9f6 ;">
+    <nav class="uk-navbar-container" uk-navbar style="background-color: #fdf9f6 ;">
         <div class="uk-navbar-center">
             <ul class="uk-navbar-nav">
 
                 <li>
-                    <a href="/" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                    <a href="/" style="text-decoration:none" onmouseover="style='text-decoration:underline'"
+                        onmouseout="style='text-decoration:none'">
                         HOME
                     </a>
                 </li>
                 <li>
-                    <a href="/about.html" style="text-decoration:underline" onmouseover="style='text-decoration:none'" onmouseout="style='text-decoration:underline'">
-                        ABOUT
+                    <a href="/about.html" style="text-decoration:underline" onmouseover="style='text-decoration:none'"
+                        onmouseout="style='text-decoration:underline'">
+                        ABOUT ME
                     </a>
                 </li>
 
                 <div class="uk-navbar-item">
                     <!-- <button class="uk-button uk-button-default" style="color: white;">Resume</button> -->
-                    <a id="target" class="uk-button" href="/resume/RESUME-CHARLYJOSE.pdf" download="RESUME-CHARLYJOSE" >
+                    <a id="target" class="uk-button" href="/resume/RESUME-CHARLYJOSE.pdf" download="RESUME-CHARLYJOSE">
                         <button class="uk-button uk-button-default" style="color: black; background-color: #fdf9f6;"
                             onMouseOver="this.style.backgroundColor='#eaddcc'"
                             onMouseOut="this.style.backgroundColor='#fdf9f6'">Resume</button>
@@ -170,147 +179,159 @@
     <div style="background-color: #fdf9f6;">
         <div class="uk-container uk-container-small" style="background-color: #fdf9f6;">
 
+
+            <!-- NAME -->
             <div class="uk-comment uk-comment-primary">
                 <h2 class="uk-heading-divider uk-text-center">
                     <span>
                         <b>CHARLY JOSE</b>
                         <!-- <h6 style="margin-top: 0px;" style="font-size: small;"><span><a id="js-modal-prompt" href="#"
                                     style="color: black;" onclick="mailTo()">Mail Me</a> | Kerala, IN</span></h6> -->
-                        <h6 style="margin-top: 0px;" style="font-size: small;"><span><a id="js-modal-prompt" href="mailto:hicharlyjose@gmail.com?Subject=Hello!!"
+                        <h6 style="margin-top: 0px;" style="font-size: small;"><span><a id="js-modal-prompt"
+                                    href="mailto:hicharlyjose@gmail.com?Subject=Hello!!"
                                     style="color: black;">hicharlyjose@gmail.com</a> | Kerala, IN</span></h6>
                     </span></h2>
             </div>
 
 
+
+
+
+
             <!-- ABOUT ME -->
-            <div class="uk-comment uk-comment-primary">
-                <h5 class="uk-heading-divider uk-text-center"><span><b>ABOUT ME</b></span></h5>
+            <div class="container">
+                <div class="itemm">
+                <div class="uk-comment uk-comment-primary item">
+                    <h5 class="uk-heading-divider uk-text-center"><span><b>ABOUT ME</b></span></h5>
 
-                <table class="uk-table uk-table-small uk-table-responsive">
-                    <tbody>
-                        <tr>
-                            <td
-                                style="padding-left: 0px; padding-bottom: 20px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
-                                <p>Computer Science nerd, physics enthusiast, original, who prefers a window seat, just
-                                    to
-                                    feel
-                                    the fresh,
-                                    cold breeze brushing against my face.</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <table class="uk-table uk-table-small uk-table-responsive">
+                        <tbody>
+                            <tr>
+                                <td
+                                    style="padding-left: 0px; padding-bottom: 20px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
+                                    <p>Computer Science nerd, physics enthusiast, original, who prefers a window seat,
+                                        just
+                                        to
+                                        feel
+                                        the fresh,
+                                        cold breeze brushing against my face.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
-
+            </div>
 
 
 
             <!-- EDUCATION -->
-            <div class="uk-comment uk-comment-primary">
-                <h5 class="uk-heading-divider uk-text-center"><span><b>EDUCATION</b></span></h5>
+            <div class="container">
+                <div class="itemm">
+                <div class="uk-comment uk-comment-primary item">
+                    <h5 class="uk-heading-divider uk-text-center"><span><b>EDUCATION</b></span></h5>
 
-                <!-- Undergraduate College -->
-                <table class="uk-table uk-table-small uk-table-responsive">
-                    <tbody>
-                        <tr>
-                            <td
-                                style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
-                                <p><b>Muthoot Institute of Technology and Science</b>, Cochin, IN</p>
-                            </td>
-                            <td class="uk-align-right"
-                                style="padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
-                                <small><i>August 2016 - July 2020</i></small></td>
-                        </tr>
+                    <!-- Undergraduate College -->
+                    <table class="uk-table uk-table-small uk-table-responsive">
+                        <tbody>
+                            <tr>
+                                <td
+                                    style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
+                                    <p><b>Muthoot Institute of Technology and Science</b>, Cochin, IN</p>
+                                </td>
+                                <td class="uk-align-right"
+                                    style="padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
+                                    <small><i>August 2016 - July 2020</i></small></td>
+                            </tr>
 
-                        <tr>
-                            <td
-                                style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
-                                <p>B.Tech in Computer Science and Engineering</p>
-                            </td>
-                            <td class="uk-align-right"
-                                style="padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
-                                <small><i>CGPA: <b>7.15/10</b></i></small></td>
-                        </tr>
+                            <tr>
+                                <td
+                                    style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
+                                    <p>B.Tech in Computer Science and Engineering</p>
+                                </td>
+                                <td class="uk-align-right"
+                                    style="padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
+                                    <small><i>CGPA: <b>7.15/10</b></i></small></td>
+                            </tr>
 
-                        <tr>
-                            <td
-                                style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
-                                <p><b>Affl:</b> APJ Abdul Kalam Technological University</p>
-                            </td>
-                            <td class="uk-align-right"
-                                style="padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
-                                <small><i>GPA: <b>3.0/4.0</b></i></small></td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <tr>
+                                <td
+                                    style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
+                                    <p><b>Affl:</b> APJ Abdul Kalam Technological University</p>
+                                </td>
+                                <td class="uk-align-right"
+                                    style="padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
+                                    <small><i>GPA: <b>3.0/4.0</b></i></small></td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                <!-- High School -->
-                <table class="uk-table uk-table-small uk-table-responsive">
-                    <tbody>
-                        <tr>
-                            <td
-                                style="padding-left: 0px; padding-bottom: 0px; padding-top: 10px; margin-top: 0px; margin-bottom: 0px;">
-                                <p><b>Cochin Refineries School</b>, Cochin, IN</p>
-                            </td>
-                            <td class="uk-align-right"
-                                style="padding-bottom: 0px; padding-top: 10px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
-                                <small><i>June 2014 - May 2016</i></small></td>
-                        </tr>
+                    <!-- High School -->
+                    <table class="uk-table uk-table-small uk-table-responsive">
+                        <tbody>
+                            <tr>
+                                <td
+                                    style="padding-left: 0px; padding-bottom: 0px; padding-top: 10px; margin-top: 0px; margin-bottom: 0px;">
+                                    <p><b>Cochin Refineries School</b>, Cochin, IN</p>
+                                </td>
+                                <td class="uk-align-right"
+                                    style="padding-bottom: 0px; padding-top: 10px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
+                                    <small><i>June 2014 - May 2016</i></small></td>
+                            </tr>
 
-                        <tr>
-                            <td
-                                style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
-                                <p>Computer Science in Class 12<sup>th</sup></p>
-                            </td>
-                            <td class="uk-align-right"
-                                style="padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
-                                <small><i>Aggr. Percentage: <b>94.2%</b></i></small></td>
-                        </tr>
+                            <tr>
+                                <td
+                                    style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
+                                    <p>Computer Science in Class 12<sup>th</sup></p>
+                                </td>
+                                <td class="uk-align-right"
+                                    style="padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
+                                    <small><i>Aggr. Percentage: <b>94.2%</b></i></small></td>
+                            </tr>
 
-                        <tr>
-                            <td
-                                style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
-                                <p><b>Affl:</b> CBSE</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <tr>
+                                <td
+                                    style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
+                                    <p><b>Affl:</b> CBSE</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                <!-- Middle School -->
-                <table class="uk-table uk-table-small uk-table-responsive">
-                    <tbody>
-                        <tr>
-                            <td
-                                style="padding-left: 0px; padding-bottom: 0px; padding-top: 10px; margin-top: 0px; margin-bottom: 0px;">
-                                <p><b>Toc H School</b>, Cochin, IN</p>
-                            </td>
-                            <td class="uk-align-right"
-                                style="padding-bottom: 0px; padding-top: 10px; margin-top: 0px; margin-bottom: 0px;  padding-right: 0px; padding-right: 0px;">
-                                <small><i>June 2013 - May 2014</i></small></td>
-                        </tr>
+                    <!-- Middle School -->
+                    <table class="uk-table uk-table-small uk-table-responsive">
+                        <tbody>
+                            <tr>
+                                <td
+                                    style="padding-left: 0px; padding-bottom: 0px; padding-top: 10px; margin-top: 0px; margin-bottom: 0px;">
+                                    <p><b>Toc H School</b>, Cochin, IN</p>
+                                </td>
+                                <td class="uk-align-right"
+                                    style="padding-bottom: 0px; padding-top: 10px; margin-top: 0px; margin-bottom: 0px;  padding-right: 0px; padding-right: 0px;">
+                                    <small><i>June 2013 - May 2014</i></small></td>
+                            </tr>
 
-                        <tr>
-                            <td
-                                style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
-                                <p>Class 10<sup>th</sup></p>
-                            </td>
-                            <td class="uk-align-right"
-                                style="padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
-                                <small><i>CGPA: <b>9.6/10</b></i></small></td>
-                        </tr>
+                            <tr>
+                                <td
+                                    style="padding-left: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
+                                    <p>Class 10<sup>th</sup></p>
+                                </td>
+                                <td class="uk-align-right"
+                                    style="padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px; padding-right: 0px;">
+                                    <small><i>CGPA: <b>9.6/10</b></i></small></td>
+                            </tr>
 
-                        <tr>
-                            <td
-                                style="padding-left: 0px; padding-bottom: 20px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
-                                <p><b>Affl:</b> CBSE</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <tr>
+                                <td
+                                    style="padding-left: 0px; padding-bottom: 20px; padding-top: 0px; margin-top: 0px; margin-bottom: 0px;">
+                                    <p><b>Affl:</b> CBSE</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
-
+            </div>
 
 
 
@@ -318,7 +339,7 @@
 
 
             <!-- TECHNICAL SKILLS -->
-            <div class="uk-comment uk-comment-primary">
+            <div class="uk-comment uk-comment-primary item">
                 <h5 class="uk-heading-divider uk-text-center"><span><b>TECHNICAL SKILLS</b></span></h5>
 
                 <caption>
@@ -445,7 +466,7 @@
 
 
             <!-- SOFT SKILLS -->
-            <div class="uk-comment uk-comment-primary">
+            <div class="uk-comment uk-comment-primary item">
                 <h5 class="uk-heading-divider uk-text-center"><span><b>SOFT SKILLS</b></span></h5>
 
                 <table class="uk-table uk-table-small uk-table-responsive">
@@ -486,7 +507,7 @@
 
 
             <!-- HOBBIES -->
-            <div class="uk-comment uk-comment-primary">
+            <div class="uk-comment uk-comment-primary item">
                 <h5 class="uk-heading-divider uk-text-center"><span><b>HOBBIES</b></span></h5>
 
                 <table class="uk-table uk-table-small uk-table-responsive">
@@ -526,7 +547,7 @@
 
 
             <!-- AWARDS & ACHIEVEMENTS -->
-            <div class="uk-comment uk-comment-primary">
+            <div class="uk-comment uk-comment-primary item">
                 <h5 class="uk-heading-divider uk-text-center"><span><b>AWARDS & ACHIEVEMENTS</b></span></h5>
 
                 <table class="uk-table uk-table-small uk-table-responsive">
@@ -596,7 +617,7 @@
 
 
             <!-- COURSES -->
-            <div class="uk-comment uk-comment-primary">
+            <div class="uk-comment uk-comment-primary item">
                 <h5 class="uk-heading-divider uk-text-center"><span><b>COURSES</b></span></h5>
 
                 <table class="uk-table uk-table-small uk-table-responsive">
@@ -626,7 +647,7 @@
 
 
             <!-- SOCIAL -->
-            <div class="uk-comment uk-comment-primary">
+            <div class="uk-comment uk-comment-primary item">
                 <h5 class="uk-heading-divider uk-text-center"><span><b>SOCIAL</b></span></h5>
 
                 <table class="uk-table uk-table-small uk-table-responsive">
@@ -687,7 +708,7 @@
 
 
             <!-- DISCLAIMER -->
-            <div class="uk-comment uk-comment-primary" style="margin-bottom: 50px;">
+            <div class="uk-comment uk-comment-primary item" style="margin-bottom: 50px;">
                 <h6 class="uk-heading-divider uk-text-left" style="font-size: x-small; color: black;">
                     <span><b>DISCLAIMER</b></span></h6>
 
@@ -730,7 +751,7 @@
     <hr class="uk-divider-icon">
 
     <!-- FOOTER -->
-    <div class="uk-container uk-container-small">
+    <div class="uk-container uk-container-small item">
 
         <div class="uk-flex">
             <div class="uk-width-1-1">
