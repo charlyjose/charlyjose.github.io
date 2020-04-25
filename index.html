@@ -3,126 +3,151 @@
 
 <head>
     <title>Charly Jose</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024, initial-scale=0.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/gif" href="/images/favicon/wave.gif">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-
-
-    <!-- <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet" /> -->
-    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-
 
 
     <style>
-        html {
-            background-color: #fdf9f6;
-            /* font-family: "Tajawal", sans-serif; */
-            font-family: 'Cinzel', serif;
-
-
-
-        }
-
         header {
-            /* border-bottom: 1px solid #eee; */
-            /* height: 140px; */
+            border-bottom: 1px solid #eee;
+            height: 5px;
             position: relative;
             padding-top: 5px;
-            background-image: linear-gradient(90deg,
-                    #2c2a86 20.5%,
-                    #078d2d 20.5%,
-                    #078d2d 37.5%,
-                    #fcb20d 37.5%,
-                    #fcb20d 55.5%,
-                    #ec5100 55.5%,
-                    #ec5100 72.5%,
-                    #6a3c06 72.5%,
-                    #6a3c06 79.5%,
-                    #c01c1b 79.5%);
+            background-image: linear-gradient(90deg, #2C2A86 20.5%, #078D2D 20.5%, #078D2D 37.5%, #FCB20D 37.5%, #FCB20D 55.5%, #EC5100 55.5%, #EC5100 72.5%, #6A3C06 72.5%, #6A3C06 79.5%, #C01C1B 79.5%);
             background-size: 300px 5px;
             background-repeat: repeat-x;
+            background-repeat: repeat-y;
         }
 
-        a {
-            text-decoration: none;
+        body {
+            font-family: 'Roboto Mono', monospace;
         }
 
-        a:hover {
+        h1,
+        h2 {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 2.24em;
+            text-align: left;
+        }
+
+        h1 {
+            font-weight: bolder;
+            letter-spacing: 0.9em;
+        }
+
+        h2 {
+            font-size: 1.09em;
+            color: #96979c;
+            padding-top: 10px;
+        }
+
+        h5 {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .links {
             text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .link {
+            border: 2px solid #96979c;
+            border-radius: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 1px;
+            padding-bottom: 3px;
+        }
+
+        .link:hover {
+            font-weight: bold;
+            background-color: ivory;
         }
     </style>
 </head>
 
+
 <body>
-    <div class="uk-flex uk-flex-column uk-width-1-1">
-        <header></header>
+    <div class="uk-container uk-container-xsmall">
 
-        <!-- NAVBAR -->
-        <nav class="uk-navbar-container" uk-navbar style="background-color: #fdf9f6 ;">
-            <div class="uk-navbar-center">
-                <ul class="uk-navbar-nav">
-                    <li>
-                        <a href="/" style="text-decoration:underline" onmouseover="style='text-decoration:none'"
-                            onmouseout="style='text-decoration:underline'">
-                            HOME
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/about.html" style="text-decoration:none"
-                            onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                            ABOUT ME
-                        </a>
-                    </li>
-                </ul>
+
+        <!-- HEADER -->
+        <div class="uk-grid-match uk-grid-small uk-flex-center uk-text-center" uk-grid
+            style="align-items: center; margin: 50px auto;">
+            <div class="uk-width-expand@m">
+                <div class="uk-flex-first" style="padding-left: 40px;">
+                    <header>
+                    </header>
+                    <header>
+                    </header>
+                    <header>
+                    </header>
+                    <header>
+                    </header>
+                    <h1 style="margin-top: 20px; margin-bottom: 0px;">CHARLY JOSE</h1>
+                    <h2 style="margin-top: 0px; margin-bottom: 10px; ">student, compsci and more...</h2>
+                    <header>
+                    </header>
+                </div>
             </div>
-        </nav>
 
-        <div class="uk-height-medium uk-comment uk-flex uk-flex-center uk-flex-middle"
-            style="background-color: #fdf9f6;">
-            <div class="uk-flex">
-                <div class="uk-width-1-1" style="color: black; font-size: 50px;">
-                    <center><small>Charly Jose</small></center>
+            <div class="uk-width-auto@m uk-visible@m">
+                <div></div>
+            </div>
+
+            <div class="uk-width-1-3@m">
+                <div>
+                    <img class="uk-border-circle" src="images/profile.jpg">
                 </div>
             </div>
         </div>
 
-        <div class="uk-height-medium uk-comment uk-flex uk-flex-center uk-flex-middle"
-            style="background-color: #fdf9f6;">
-            <div class="uk-flex">
-                <div class="uk-child-width-1-2@s uk-height-1-1 uk-grid-match" uk-grid>
-                    <div>
-                        <img class="uk-align-right uk-margin-remove-adjacent" src="images/profile.jpg" width="249"
-                            height="249" alt="profile image" />
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light uk-flex uk-flex-center uk-flex-middle mycard"
-                            style="background-color: black;" onMouseOver="this.style.backgroundColor='#eaddcc'"
-                            onMouseOut="this.style.backgroundColor='#000'">
-                            <a href="/about.html" style="text-decoration: none;">
-                                <h2 class="uk-card-title mytitle" style="font-weight: lighter;"
-                                    onMouseOver="this.style.color='#000'" onMouseOut="this.style.color='#fff'">
-                                    ABOUT
-                                </h2>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
+        <!-- LINKS -->
+        <div class="uk-child-width-1-2@s uk-child-width-1-5@m uk-text-center uk-flex-center links" uk-grid
+            style="align-items: center; margin: 50px auto;">
+
+            <div class="uk-flex-first">
+                <a href="https://twitter.com/njan_charly" class="link" style="color: #08a0e9;">twitter</a>
+            </div>
+            <div>
+                <a href="https://github.com/charlyjose" class="link" style="color: #2ebc4f;">github</a>
+            </div>
+            <div>
+                <a href="https://linkedin.com/in/charlyjose" class="link" style="color: #0072b1;">linkedin</a>
+            </div>
+            <div>
+                <a href="mailto:hicharlyjose@gmail.com" class="link" style="color: #fbbc05;">email</a>
+            </div>
+            <div class="uk-flex-last">
+                <a href="/resume/RESUME-CHARLYJOSE.pdf" class="link" style="color: #cc0000;">resume</a>
+            </div>
+
+        </div>
+
+
+        <!-- WELCOME -->
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-text-center uk-flex-center" uk-grid
+            style="align-items: center; margin: 50px auto;">
+            <div class="uk-flex-first">
+                <h5>thank you for coming here...</h5>
+            </div>
+            <div class="uk-flex-last">
+                <h1 class="uk-text-center" style="font-size: 3em;">👋</h1>
             </div>
         </div>
 
-        <div class="uk-height-medium uk-comment uk-flex uk-flex-center uk-flex-middle"
-            style="background-color: #fdf9f6;">
-            <div class="uk-flex">
-                <div class="uk-width-1-1" style="color: black; font-size: 50px;">
-                    <!-- <center><small>STUDENT @ MITS</small></center> -->
-                </div>
-            </div>
-        </div>
+
+
     </div>
 
+
 </body>
+
 
 </html>
